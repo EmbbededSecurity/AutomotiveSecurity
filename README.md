@@ -8,6 +8,7 @@ Please Download PCANBasic.py file to read the packets from CAN Bus by using PEAK
 
 1. DBC Parser
 - This code would help you to define Signal, IDs, Nodes and etc. followed by the .DBC files you offered.
+- Pleased located .DBC files you have by naming it with the channel name under same folder.
 
 
 
