@@ -1,6 +1,6 @@
 # AutomotiveSecurity
 
-This is Data Analyzer for CAN BUS protocols.
+This is a Data Analyzer for CAN Bus protocols.
 
 You can analyze the data based on .DBC files you already have or define the signals by yourself.
 
