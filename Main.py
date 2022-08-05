@@ -2,28 +2,46 @@ from PCANBasic import *
 import numpy as np
 import time
 from DBCParser import *
+import numpy as np
+import matplotlib.pyplot as plt
+from itertools import count
+import csv
+import pandas as pd
+from matplotlib.animation import FuncAnimation
 
-
-CAN_B = PCANBasic()
+em_CAN = PCANBasic()
 
 
 
 def setup(BUS_interface, PCAN_BAUD):
-    result = CAN_B.Initialize(BUS_interface, PCAN_BAUD)
+    result = em_CAN.Initialize(BUS_interface, PCAN_BAUD)
 
     if result == PCAN_ERROR_OK:
-        print("Getstatus:-, ", CAN_B.GetStatus(BUS_interface), "-->initial success")
-        print("hardware:-", CAN_B.GetValue(BUS_interface, PCAN_DEVICE_NUMBER))
+        print("Getstatus:-, ", em_CAN.GetStatus(BUS_interface), "-->initial success")
+        print("hardware:-", em_CAN.GetValue(BUS_interface, PCAN_DEVICE_NUMBER))
 
-        
-def Online_Test(DBC_NAME):
-    DBC = ParsingDBC(DBC_NAME)
+def Plotting(signal):
+    plt.style.use('fivethirtyeight')
+
+    x_val = []
+    y_val = []
+
+    index = count()
+    signal1 = signal
 
 
 
-if __name__ == '__main__':
-    Online_Test("B-CAN")
 
 
 
+
+
+def Signal_Print(BUS_interface, PCAN_BAUD, ID, SignalStart, SignalEnd):
+    flag=0
+    result = em_CAN.Initialize(BUS_interface, PCAN_BAUD)
+    ID = hex(ID)
+
+    if result == PCAN_ERROR_OK:
+        print("Getstatus:-, ", em_CAN.GetStatus(BUS_interface), "-->initial success")
+        print("hardware:-", em_CAN.GetValue(BUS_interface, PCAN_DEVICE_NUMBER))
 
