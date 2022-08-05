@@ -45,3 +45,23 @@ def Signal_Print(BUS_interface, PCAN_BAUD, ID, SignalStart, SignalEnd):
         print("Getstatus:-, ", em_CAN.GetStatus(BUS_interface), "-->initial success")
         print("hardware:-", em_CAN.GetValue(BUS_interface, PCAN_DEVICE_NUMBER))
 
+    try:
+        x = 0
+        plt.style.use('fivethirtyeight')
+
+        x_val = []
+        y_val = []
+
+        index = count()
+        while (True):
+            status, R_msg, Time = em_CAN.Read(BUS_interface)
+
+            if status == PCAN_ERROR_OK:
+                if flag ==0:
+                    first_time=Time.millis + Time.micros * 0.001
+                    flag = 1
+
+                time = (Time.millis + Time.micros * 0.001)-first_time
+                i = 0
+                data = ("{0}\t {1}\t {2}\t".format(time, hex(R_msg.ID), R_msg.LEN))
+
