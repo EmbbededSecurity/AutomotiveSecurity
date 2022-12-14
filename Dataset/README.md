@@ -15,7 +15,7 @@ Datasets were constructed by logging CAN traffic via the OBD-II port from a real
    - Suspended ECU (Req ID: 0x7B7)
    - Masquerading CAN IDs: 0x48A, 0x48C, 0x58B
 
- ＊Masquerade attack using bus-off attack
+ ＊Masquerade attack using Bus-off attack
    - Bus-off target ID: 0x48A
    - Masquerading CAN IDs: 0x48A, 0x48C, 0x58B
 
