@@ -30,12 +30,6 @@ def Plotting(signal):
     signal1 = signal
 
 
-
-
-
-
-
-
 def Signal_Print(BUS_interface, PCAN_BAUD, ID, SignalStart, SignalEnd):
     flag=0
     result = em_CAN.Initialize(BUS_interface, PCAN_BAUD)
