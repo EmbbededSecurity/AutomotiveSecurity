@@ -3,6 +3,17 @@ It has been known that it is the most difficult to detect a masquerade attack th
 There is no difference between normal and malicious messages when it comes to their transmission periodicity and the content of their data payload. 
 Thus we open our datasets to the public to foster further car security research.
 
+If you plan to use this data set for your own research, please cite:
+...
+@article{lee2022ttids,
+  title={TTIDS: Transmission-resuming Time-based Intrusion Detection System for Controller Area Network (CAN)},
+  author={Lee, Seyoung and Jo, Hyo Jin and Cho, Aram and Lee, Dong Hoon and Choi, Wonsuk},
+  journal={IEEE Access},
+  year={2022},
+  publisher={IEEE}
+}
+...
+
 # Dataset
 We provide datasets which include masquerade attack with suspension attack through UDS services and Bus-off attack. 
 Datasets were constructed by logging CAN traffic via the OBD-II port from a real vehicle while message injection attacks were performing.
