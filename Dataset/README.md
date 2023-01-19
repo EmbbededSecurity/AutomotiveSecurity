@@ -37,5 +37,5 @@ Datasets were constructed by logging CAN traffic via the OBD-II port from a real
 4. Data: data value (byte)
 5. Class: Normal or Attack
 
-
+By Emsec
 
