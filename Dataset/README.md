@@ -13,6 +13,7 @@ If you plan to use this data set for your own research, please cite:
   publisher={IEEE}
 }
 ...
+EMSEC (Embedded Security) Laboratory (http://protocol.korea.ac.kr/)
 
 # Dataset
 We provide datasets which include masquerade attack with suspension attack through UDS services and Bus-off attack. 
@@ -36,6 +37,3 @@ Datasets were constructed by logging CAN traffic via the OBD-II port from a real
 3. DLC: Number of data bytes, from 0 to 8
 4. Data: data value (byte)
 5. Class: Normal or Attack
-
-By Emsec
-
